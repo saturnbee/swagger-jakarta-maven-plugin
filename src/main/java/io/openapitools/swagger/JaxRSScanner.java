@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Application;
 
 import org.apache.maven.plugin.logging.Log;
 
@@ -47,7 +47,7 @@ class JaxRSScanner {
             if (applicationClasses.size() == 1) {
                 applicationInstance = ClassUtils.createInstance(applicationClasses.get(0).loadClass(Application.class));
             } else if (applicationClasses.size() > 1) {
-                log.warn("More than one javax.ws.rs.core.Application classes found on the classpath, skipping");
+                log.warn("More than one jakarta.ws.rs.core.Application classes found on the classpath, skipping");
             }
         }
         return applicationInstance;

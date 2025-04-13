@@ -13,7 +13,7 @@
         <plugins>
             <plugin>
                 <groupId>io.openapitools.swagger</groupId>
-                <artifactId>swagger-maven-plugin</artifactId>
+                <artifactId>swagger-jakarta-maven-plugin</artifactId>
                 <configuration>
                     <resourcePackages>
                         <resourcePackage>io.openapitools.swagger.example</resourcePackage>

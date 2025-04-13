@@ -1,12 +1,12 @@
-# Swagger Maven Plugin
+# Swagger Jakarta Maven Plugin
 
-This plugin is intended to use the [Swagger Core library](https://github.com/swagger-api/swagger-core) to generate
-OpenAPI documentation from a JAX-RS based REST service with as little change as possible. This allows for @SwaggerDefinition, @ReaderListener and ModelConverters to work the same way as with the core Swagger library.
-
+This plugin is intended to use the [Swagger Core library](https://github.com/swagger-api/swagger-core) to generate OpenAPI documentation from JAX-RS 3+ based REST services with as little change as possible.
+This allows for @SwaggerDefinition, @ReaderListener and ModelConverters to work the same way as with the core Swagger library.
+This version supports, and only supports, JAX-RS 3+ / Jakarta EE9+, i.e. after the jakarta namespace change.
 
 # Status
 
-The plugin is considered production ready. The version 2.x.x of the plugin is supporting generation of OpenAPI version 3 specifications using Swagger 2.x. To generate OpenAPI version 2 specifications using Swagger 1.x use the latest 1.x.x version of the plugin.
+The plugin is considered production ready. The version 3.x.x of the plugin is supporting generation of OpenAPI version 3 specifications using Swagger 2.x and JAX-RS 3.x.
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.openapitools.swagger/swagger-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.openapitools.swagger/swagger-maven-plugin/)
 [![Javadoc](https://javadoc.io/badge/io.openapitools.swagger/swagger-maven-plugin/badge.svg)](https://www.javadoc.io/doc/io.openapitools.swagger/swagger-maven-plugin)
@@ -23,8 +23,8 @@ To have Swagger generate the OpenAPI specifications as part of the build add in 
   <plugins>
     ...
     <plugin>
-      <groupId>io.openapitools.swagger</groupId>
-      <artifactId>swagger-maven-plugin</artifactId>
+      <groupId>io.github.saturnbee</groupId>
+      <artifactId>swagger-jakarta-maven-plugin</artifactId>
       <configuration>
         <resourcePackages>
           <resourcePackage>io.openapitools.swagger.example</resourcePackage>
@@ -60,8 +60,8 @@ Most general properties of the Swagger model is configurable using the swaggerCo
 
 ```xml
 <plugin>
-  <groupId>io.openapitools.swagger</groupId>
-  <artifactId>swagger-maven-plugin</artifactId>
+  <groupId>io.github.saturnbee</groupId>
+  <artifactId>swagger-jakarta-maven-plugin</artifactId>
   <configuration>
     <swaggerConfig>
       <servers>
@@ -99,13 +99,15 @@ The generated OpenAPI specifications may be installed and deployed as Maven arti
 
 ```xml
 <plugin>
-  <groupId>io.openapitools.swagger</groupId>
-  <artifactId>swagger-maven-plugin</artifactId>
+  <groupId>io.github.saturnbee</groupId>
+  <artifactId>swagger-jakarta-maven-plugin</artifactId>
   <configuration>
     <attachSwaggerArtifact>true</attachSwaggerArtifact>
 ```
 
 # Acknowledgement
 
-Thanks to [Yukai Kong](https://github.com/kongchen) for his work on
-[Swagger Maven plugin](https://github.com/kongchen/swagger-maven-plugin). This plugin is heavily inspired by that.
+Thanks to the OG, [Yukai Kong](https://github.com/kongchen) for his work on [Swagger Maven plugin](https://github.com/kongchen/swagger-maven-plugin).
+Thanks to [OpenAPI Tools](https://github.com/openapi-tools/), and specifically to Thor Anker Kvisgård Lange, for [Swagger Maven plugin](https://github.com/openapi-tools/swagger-maven-plugin).
+Thanks to [David Gautier](https://github.com/dgautier/) for [Swagger Maven plugin](https://github.com/dgautier/swagger-maven-plugin).
+
