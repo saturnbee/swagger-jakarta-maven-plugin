@@ -1,7 +1,9 @@
 # Swagger Jakarta Maven Plugin
 
 This plugin is intended to use the [Swagger Core library](https://github.com/swagger-api/swagger-core) to generate OpenAPI documentation from JAX-RS 3+ based REST services with as little change as possible.
+
 This allows for @SwaggerDefinition, @ReaderListener and ModelConverters to work the same way as with the core Swagger library.
+
 This version supports, and only supports, JAX-RS 3+ / Jakarta EE9+, i.e. after the jakarta namespace change.
 
 # Status
@@ -108,6 +110,8 @@ The generated OpenAPI specifications may be installed and deployed as Maven arti
 # Acknowledgement
 
 Thanks to the OG, [Yukai Kong](https://github.com/kongchen) for his work on [Swagger Maven plugin](https://github.com/kongchen/swagger-maven-plugin).
+
 Thanks to [OpenAPI Tools](https://github.com/openapi-tools/), and specifically to Thor Anker Kvisgård Lange, for [Swagger Maven plugin](https://github.com/openapi-tools/swagger-maven-plugin).
+
 Thanks to [David Gautier](https://github.com/dgautier/) for [Swagger Maven plugin](https://github.com/dgautier/swagger-maven-plugin).
 
