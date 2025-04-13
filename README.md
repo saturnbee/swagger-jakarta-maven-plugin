@@ -15,6 +15,18 @@ The plugin is considered production ready. The version 3.x.x of the plugin is su
 [![Build status](https://travis-ci.org/openapi-tools/swagger-maven-plugin.svg?branch=master)](https://travis-ci.org/openapi-tools/swagger-maven-plugin)
 [![Known Vulnerabilities](https://snyk.io/test/github/openapi-tools/swagger-maven-plugin/badge.svg)](https://snyk.io/test/github/openapi-tools/swagger-maven-plugin) 
 
+# Installation
+
+Clone this repository.
+```
+git clone https://github.com/saturnbee/swagger-jakarta-maven-plugin.git
+```
+
+Install the maven plugin locally.
+
+```
+mvn install
+```
 
 # Usage
 
