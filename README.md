@@ -10,10 +10,12 @@ This version supports, and only supports, JAX-RS 3+ / Jakarta EE9+, i.e. after t
 
 The plugin is considered production ready. The version 3.x.x of the plugin is supporting generation of OpenAPI version 3 specifications using Swagger 2.x and JAX-RS 3.x.
 
+<!--
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.openapitools.swagger/swagger-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.openapitools.swagger/swagger-maven-plugin/)
 [![Javadoc](https://javadoc.io/badge/io.openapitools.swagger/swagger-maven-plugin/badge.svg)](https://www.javadoc.io/doc/io.openapitools.swagger/swagger-maven-plugin)
 [![Build status](https://travis-ci.org/openapi-tools/swagger-maven-plugin.svg?branch=master)](https://travis-ci.org/openapi-tools/swagger-maven-plugin)
-[![Known Vulnerabilities](https://snyk.io/test/github/openapi-tools/swagger-maven-plugin/badge.svg)](https://snyk.io/test/github/openapi-tools/swagger-maven-plugin) 
+[![Known Vulnerabilities](https://snyk.io/test/github/openapi-tools/swagger-jakarta-maven-plugin/badge.svg)](https://snyk.io/test/github/openapi-tools/swagger-jakarta-maven-plugin) 
+-->
 
 # Installation
 
